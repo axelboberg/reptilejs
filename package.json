@@ -1,5 +1,5 @@
 {
-  "name": "reptile",
+  "name": "reptilejs",
   "version": "1.0.0",
   "description": "A straightforward ORM for Nodejs",
   "main": "index.js",

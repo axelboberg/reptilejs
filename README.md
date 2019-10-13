@@ -15,7 +15,7 @@ A straightforward ORM for MySQL and Nodejs using [mysqljs/mysql](https://github.
 
 ## Usage
 ```javascript
-const { Database, Model } = require('hissjs')
+const { Database, Model } = require('reptilejs')
 
 // Connect to the database
 const myDatabase = new Database({
@@ -92,7 +92,7 @@ The class `Model` needs to be inherited from in order to work.
 ### Declaring a model
 ```javascript
 const sql = require('js-sql-syntax')
-const { Model, relations } = require('hissjs')
+const { Model, relations } = require('reptilejs')
 
 // Declare a model by inheriting from the Model-class
 class User extends Model {

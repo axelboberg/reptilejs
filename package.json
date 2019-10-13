@@ -1,0 +1,30 @@
+{
+  "name": "reptile",
+  "version": "1.0.0",
+  "description": "A straightforward ORM for Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelboberg/reptilejs.git"
+  },
+  "keywords": [
+    "orm",
+    "snake",
+    "database",
+    "db",
+    "mapping"
+  ],
+  "author": "Axel Boberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axelboberg/reptilejs/issues"
+  },
+  "homepage": "https://github.com/axelboberg/reptilejs#readme",
+  "dependencies": {
+    "js-sql-syntax": "^1.1.1",
+    "mysql": "^2.17.1"
+  }
+}

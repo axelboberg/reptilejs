@@ -2,6 +2,7 @@
 A straightforward ORM for MySQL and Nodejs using [mysqljs/mysql](https://github.com/mysqljs/mysql).
 
 ## Contents
+* [Installation](#installation)
 * [Usage](#usage)
 * [Getting started](#getting-started)
 * [Database](#database)
@@ -12,6 +13,10 @@ A straightforward ORM for MySQL and Nodejs using [mysqljs/mysql](https://github.
   * [Transactions](#model.transaction(fns))
 * [Why reptile](#why-reptile)
 * [License](#license)
+
+## Installation
+
+`npm install reptilejs`
 
 ## Usage
 ```javascript

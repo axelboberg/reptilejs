@@ -168,6 +168,17 @@ class User extends Model {
     }
   }
 
+  /*
+    OPTIONAL
+
+    A function that will modify the data returned from the
+    database before an instance of the model is created
+  */
+  static transform (data) {
+    // Modify data
+    return data
+  }
+
   // MARK: Custom methods
 
   /*

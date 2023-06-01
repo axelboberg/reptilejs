@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/axelboberg/reptilejs#readme",
   "dependencies": {
-    "js-sql-syntax": "^1.1.1",
-    "mysql": "^2.17.1"
+    "js-sql-syntax": "^1.1.4",
+    "mysql2": "^3.3.3"
   },
   "devDependencies": {
     "jest": "^26.1.0"

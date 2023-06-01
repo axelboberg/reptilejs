@@ -87,7 +87,7 @@ Connect to a database
 
 ##### opts `Object`
 An object containing the connection details for the connection pool.  
-As `Database` uses `mysqljs/mysql` internally available options are anything outlined at [https://github.com/mysqljs/mysql#pooling-connections](https://github.com/mysqljs/mysql#pooling-connections)
+As `Database` uses `sidorares/node-mysql2` internally available options are anything outlined at [https://github.com/sidorares/node-mysql2#using-connection-pools](https://github.com/sidorares/node-mysql2#using-connection-pools)
 
 ### `database.register(name, model)`
 Register a model to be used by other models registered to a database  

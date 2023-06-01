@@ -1,16 +1,17 @@
 # ReptileJS
-A straightforward ORM for MySQL and Nodejs using [mysqljs/mysql](https://github.com/mysqljs/mysql).
+A straightforward ORM for MySQL and Nodejs using [sidorares/node-mysql2](https://github.com/sidorares/node-mysql2) and [js-sql-syntax](https://github.com/axelboberg/js-sql-syntax).
 
 ## Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Security](#security)
 * [Getting started](#getting-started)
 * [Database](#database)
 * [Model](#model)
   * [Declaration](#declaring-a-model)
   * [Validation](#validation)
   * [Interacting with the database](#interacting-with-the-database)
-  * [Transactions](#model.transaction(fns))
+  * [Transactions](#transactions)
 * [Why reptile](#why-reptile)
 * [License](#license)
 
@@ -66,6 +67,12 @@ MyModel.findOne({ id: 'abcde' })
   })
 
 ```
+
+## Security
+Security is vital when dealing with databases and data in general, and it's important to understand what third party code do and does not do in your project.
+This module simply provides model management and is using the [js-sql-syntax](https://github.com/axelboberg/js-sql-syntax) project for generating queries.
+As a rule of thumb however, whenever you create queries values are safely passed to prepared statements but keys are not escaped.
+For further information, please see the [js-sql-syntax](https://github.com/axelboberg/js-sql-syntax) repository.
 
 ## Getting started  
 The framework consists of two classes, `Database` and `Model`.  
@@ -339,7 +346,9 @@ An SQL-query.
 ##### values `Array`
 Values to insert at placeholders in the query marked with `?`.
 
-#### `Model.transaction(fns)`
+#### Transactions
+`Model.transaction(fns)`
+
 Create database transactions.
 
 ##### fns `Array<Function>`

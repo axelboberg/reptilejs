@@ -1,4 +1,5 @@
 # ReptileJS
+**Supports both MySQL 5.7 and 8**  
 A straightforward ORM for MySQL and Nodejs using [sidorares/node-mysql2](https://github.com/sidorares/node-mysql2) and [js-sql-syntax](https://github.com/axelboberg/js-sql-syntax).
 
 ## Contents
